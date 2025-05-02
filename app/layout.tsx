@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Signupheader from "./header/signup-header";
+import Header from "./header/header";
+import Footer from "./footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +30,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="container max-w-full bg-[#245D30] ">
+          <Signupheader />
+        </div>
+        <div className="container max-w-full">
+          <Header />
+        </div>
+        <div className="max-w-[1440px] w-full container mx-auto ">{children}</div>
+        <div className="container max-w-full bg-[#245D30]">
+          < Footer/>
+        </div>
       </body>
+
     </html>
   );
 }
