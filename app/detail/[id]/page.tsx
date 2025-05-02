@@ -1,5 +1,4 @@
 
-import { IMAG_URL_PIKNIK, OneProduct } from "@/app/helpers/types";
 import axios from "axios";
 import OneProductDetail from "./OneProduct";
 

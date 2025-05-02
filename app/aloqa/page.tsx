@@ -13,8 +13,8 @@ export default function ContactPage() {
               Keling, biz bilan gaplashaylik
             </h1>
             <p className="max-w-[360px] w-full  text-[12px] sm:text-[16px] font-normal leading-[26px] ">
-              Savollar, sharhlar yoki takliflar? Shaklni to'ldiring va biz tez
-              orada bog'lanamiz.
+              Savollar, sharhlar yoki takliflar? Shaklni to`ldiring va biz tez
+              orada bog`lanamiz.
             </p>
           </div>
           <div className="max-w-[365px] h-[128px] sm:h-[136px] w-full flex flex-col  ">

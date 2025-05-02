@@ -87,7 +87,7 @@ const arr = [
   {
     question: "Mahsulotlarni ko`rish uchun oflayn do`koningiz bormi?",
     answer:
-      "Hozirda faqat onlayn savdo faoliyat yuritamiz. Biroq barcha mahsulotlar haqida batafsil ma’lumot taqdim etiladi.",
+      "Hozirda faqat onlayn savdo faoliyat yuritamiz. Biroq barcha mahsulotlar haqida batafsil ma`lumot taqdim etiladi.",
   },
   {
     question: "Saytingizda qanday mahsulotlarni topish mumkin?",
@@ -103,7 +103,7 @@ const arr = [
         <div className="max-w-[1240px] w-full min-h-[463px] flex flex-col sm:flex-row   justify-between">
           <div className="max-w-[596px] w-full">
             <h1 className="text-[25px] text-center sm:text-left  sm:text-[60px] font-bold mt-0  text-[#000000]  sm:leading-[64px]">
-              Zo'r jihozlar bilan sarguzashtlarni kashf eting
+              Zo`r jihozlar bilan sarguzashtlarni kashf eting
             </h1>
             <p className="max-w-[545px] text-[12px] sm:text-[16px] text-center sm:text-left font-normal  sm:leading-[22px]  mt-[26px] sm:mt-[32px] text-[#00000099]">
               Sarguzasht ishqibozlari uchun mo`ljallangan ochiq havoda kerakli

@@ -2,7 +2,7 @@
 import { IMAG_URL_PIKNIK, OneProduct } from "@/app/helpers/types";
 import useStore from "@/store/useCartStore";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 type Props={

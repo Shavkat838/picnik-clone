@@ -14,7 +14,6 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-  AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
 
@@ -174,12 +173,12 @@ function totalsumma(){
           <AlertDialogContent className="max-w-[603px] w-full rounded-[20px]   sm:h-[750px]    p-[40px]">
             <AlertDialogHeader>
               <AlertDialogTitle className="text-center text-[24px] font-bold ">
-                Buyurtma Berish Ma'lumotlarini Kiriting
+                Buyurtma Berish Ma`lumotlarini Kiriting
               </AlertDialogTitle>
               <AlertDialogDescription className=" mt-[40px] sm:mt-[53px]">
                 <div >
                   <p className="text-[20px] text-left text-[#000000]  font-medium ">
-                    Isim va Familiya
+                    Ism va Familiya
                   </p>
                   <input
                     type="text"

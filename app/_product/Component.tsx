@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import { Cart, IMAG_URL_PIKNIK, Product } from '../helpers/types'
+import React from 'react'
+import {  IMAG_URL_PIKNIK, Product } from '../helpers/types'
 import Link from 'next/link';
 import useStore from '@/store/useCartStore';
 
