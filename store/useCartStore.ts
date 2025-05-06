@@ -1,4 +1,4 @@
-import { Cart, Product } from "@/app/helpers/types";
+import { Cart } from "@/app/helpers/types";
 import { create } from "zustand";
 
 type Store = {

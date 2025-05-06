@@ -54,7 +54,15 @@ export default function Header() {
               Aloqa
             </li>
           </Link>
-          <li className="text-[16px] font-medium text-[#000000] ">Blog</li>
+          <Link href={"/blog"}>
+            <li
+              className={`text-[16px] font-medium ${
+                pathname === "/blog" ? "text-green-700" : "text-black"
+              }`}
+            >
+              Blog
+            </li>
+          </Link>
         </ul>
         {open ? (
           <div className="absolute top-[100px] left-1 right-1  bg-gray-100 rounded-md p-1 flex flex-col gap-1 sm:hidden z-50">
@@ -101,8 +109,8 @@ export default function Header() {
           ""
         )}
 
-        <div className="sm:hidden max-w-[95px] w-full h-[24px] flex items-center justify-between">
-          <Image src={"/lupa.svg"} alt="photo" width={24} height={24} />
+        <div className="sm:hidden max-w-[95px] w-full h-[24px] flex items-center justify-around">
+
           <div className="relative w-[24px] h-[24px]">
             <Link href={"/cart"}>
               <Image
@@ -126,19 +134,8 @@ export default function Header() {
             height={24}
           />
         </div>
-        <div className="max-w-[318px] h-[38px] w-full sm:flex hidden  justify-between items-center">
-          <div className="max-w-[278px] w-full relative">
-            <input
-              className="max-w-[278px] w-full h-[38px] rounded-[62px] bg-[#F0F0F0] text-center text-[16px] text-normal  "
-              type="text"
-              placeholder="Search for products..."
-            />
-            <IoSearchSharp
-              className="absolute top-2 left-4"
-              size={24}
-              color="gray"
-            />
-          </div>
+        <div className="max-w-[318px] h-[38px] w-full sm:flex hidden  justify-end items-center">
+
           <div className="w-[24px] h-[24px] relative">
             <Link href={"/cart"}>
               <Image
