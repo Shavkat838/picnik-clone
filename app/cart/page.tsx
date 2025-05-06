@@ -37,7 +37,7 @@ function totalsumma(){
   for(let i=0;i<carts.length;i++){
     natija=natija+carts[i].quantity*carts[i].product.price
   }
-  return natija
+  return natija.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 
@@ -104,7 +104,10 @@ function clearForm(){
                         {item.product.title}
                       </h1>
                       <h1 className="sm:text-[24px] text-[18px] font-bold text-[#000000] ">
-                        ${item.product.price}
+                        
+                        {item.product.price
+                          .toString()
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} USZ
                       </h1>
                     </div>
                     <div className="max-w-[255px]  w-full h-[82px] sm:h-[124px] flex flex-col justify-between items-end">
@@ -150,7 +153,7 @@ function clearForm(){
                   Oraliq jami
                 </p>
                 <p className=" text-[14px] sm:text-[20px] text-black  font-semibold">
-                  {totalsumma()}
+                  {totalsumma()} USZ
                 </p>
               </div>
               <div className="flex justify-between ">
@@ -158,7 +161,7 @@ function clearForm(){
                   Chegirma (-20%)
                 </p>
                 <p className=" text-[14px] sm:text-[20px] text-[#FF3333]  font-semibold">
-                  -113000
+                  -113,000 USZ
                 </p>
               </div>
               <hr />
@@ -167,7 +170,7 @@ function clearForm(){
                   Umumiy
                 </p>
                 <p className="text-[20px]  sm:text-[24px] text-black font-semibold">
-                  {carts.length > 0 ? totalsumma() - 113 : 0}
+                  {carts.length > 0 && totalsumma()} USZ
                 </p>
               </div>
             </div>

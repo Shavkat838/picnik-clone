@@ -47,8 +47,17 @@ const {setCarts}=useStore()
           height={19}
         />
         <div className="flex justify-between max-w-[295px]   w-full items-center h-[32px]">
-          <p className="text-[24px] font-bold">${product.price}</p>
-          <Image onClick={()=>setCarts({id:Date.now(),product,quantity:1})}  className='cursor-pointer' src={"/savatcha.svg"} alt="photo" width={26} height={26} />
+          <p className="text-[24px] font-bold">
+            {product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} USZ
+          </p>
+          <Image
+            onClick={() => setCarts({ id: Date.now(), product, quantity: 1 })}
+            className="cursor-pointer"
+            src={"/savatcha.svg"}
+            alt="photo"
+            width={26}
+            height={26}
+          />
         </div>
       </div>
     </div>
