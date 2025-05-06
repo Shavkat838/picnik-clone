@@ -23,7 +23,7 @@ import { useRouter } from 'next/navigation';
 export default function CartPage() {
 
 
-const {carts,handleQuantity,handleDeleteCart,setCarts}=useStore()
+const {carts,handleQuantity,handleDeleteCart}=useStore()
 const [open,setOpen]=useState(false)
 const [fullname,setFullname]=useState("")
 const [raqam,setRaqam]=useState("")

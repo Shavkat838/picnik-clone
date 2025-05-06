@@ -64,45 +64,4 @@ export default function BlogPage() {
 
 
 
-      // <Dialog
-      //   open={isOpen}
-      //   onClose={() => setIsOpen(false)}
-      //   className="fixed inset-0 z-50  bg-gray-50  mx-auto flex items-center justify-center"
-      // >
-      //   <Dialog.Panel>
-      //     <div className="card mx-auto w-[400px]  mb-[10px] ">
-      //       <div className="card-header">Add</div>
-      //       <div className="card-body">
-      //         <input
-      //           value={fullName}
-      //           onChange={(e) => setFullName(e.target.value)}
-      //           type="text"
-      //           placeholder="name.."
-      //           className="form-control mt-2 "
-      //         />
-      //         <input
-      //           value={age}
-      //           onChange={(e) => setAge(e.target.value)}
-      //           type="text"
-      //           placeholder="age.."
-      //           className="form-control mt-2 "
-      //         />
-      //         <input
-      //           checked={isStudent}
-      //           onChange={(e) => setIsStudent(e.target.checked)}
-      //           type="checkbox"
-      //           className="form-check-input mt-2 "
-      //         />
-      //       </div>
-      //       <div className="card-footer">
-      //         <button
-      //           onClick={handleUpdate}
-      //           style={{ width: "100%" }}
-      //           className="btn btn-dark "
-      //         >
-      //           Update
-      //         </button>
-      //       </div>
-      //     </div>
-      //   </Dialog.Panel>
-      // </Dialog>;
+     

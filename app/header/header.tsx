@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import React, {  useState } from 'react'
-import { IoSearchSharp } from 'react-icons/io5';
+
 
 import { usePathname } from 'next/navigation';
 import useStore from '@/store/useCartStore';
